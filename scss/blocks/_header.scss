@@ -1,0 +1,107 @@
+.site-header{
+  // position: fixed;
+  width: 100%;
+  padding: 18px 0;
+  background-color: #fff;
+  // z-index: 3;
+
+
+}
+
+.site-header__inner{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.site-header__logo{
+  width: 139px;
+  height: 20px;
+}
+
+.site-header__block{
+  display: flex;
+  align-items: center;
+  gap: 226px;
+}
+
+.site-header__list{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
+.site-header__hamburg-menu{
+  width: 24px;
+  height: 16px;
+  padding: 0;
+  border: 0;
+  background-image: url(../images/toggler-open.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: none;
+}
+
+
+
+.site-header__item-link{
+  font-family: 'Public Sans';
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.107692px;
+  color: #9597A5;
+  position: relative;
+  &:hover{
+    color: #2D314D;
+    cursor: pointer;
+    &::before{
+      content: '';
+      width: 51px;
+      height: 4px;
+      background-image: url(../../images/button.png);
+      position: absolute;
+      left: -1px;
+      bottom: -32px;
+    }
+  }
+}
+
+
+.btn{
+  padding: 8px 36px 8px 33px;
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  border-radius: 22px;
+  font-family: Public Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+
+  &:hover{
+    opacity: 0.4;
+  }
+
+}
+
+
+@media only screen and (max-width: 426px) {
+
+  .site-header{
+    padding: 22px 0;
+  }
+
+  .site-header__block{
+    display: none;
+  }
+
+  .site-header__hamburg-menu{
+    display: block;
+  }
+
+
+
+}
