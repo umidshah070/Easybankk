@@ -1,0 +1,164 @@
+.site-footer{
+  background-color: #2D314D;
+}
+
+
+.site-footer__inner{
+  padding: 48px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer__block{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.site-footer__logo-img{
+  width: 139px;
+  height: 20px;
+}
+
+.site-footer__massenger{
+  display: flex;
+  gap: 13px;
+}
+
+.site-footer__list{
+  max-height: 90px;
+  margin: 0 255px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 9px;
+
+}
+
+.site-footer__massenger-link{
+  color: #fff;
+  transition: color 0.4s ease;
+
+  &:hover{
+    color: #30C88F;
+  }
+}
+
+.site-footer__item{
+  margin: 0;
+  padding: 0;
+  &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+    margin-left: 90px;
+  }
+}
+
+.site-footer__item-link{
+  font-family: 'Public Sans';
+  font-size: 15px;
+  color: #FFFFFF;
+  transition: color 0.4s ease;
+
+  &:hover{
+    color: #30C88F;
+  }
+}
+
+
+.site-footer__content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.content__link{
+  padding: 8px 36px 8px 33px;
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  border-radius: 22px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+  transition: opacity 0.4s ease;
+
+  &:hover{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+
+
+  }
+
+}
+.content__text{
+  padding: 0;
+  margin: 0;
+  font-family: 'Public Sans';
+  font-size: 15px;
+  line-height: 26px;
+  text-align: right;
+  letter-spacing: -0.234375px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+
+
+@media only screen and (max-width:426px) {
+
+  .site-footer__inner{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .site-footer__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .site-footer__massenger{
+    display: flex;
+    gap: 16px;
+  }
+
+  .site-footer__list{
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+  }
+
+  .site-footer__item{
+    margin: 0;
+    padding: 0;
+    &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+      margin-left:0;
+    }
+  }
+
+  .site-footer__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+
+
+
+}
