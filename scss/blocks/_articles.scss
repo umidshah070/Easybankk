@@ -1,6 +1,6 @@
 .articles{
   padding: 80px 0;
-  background-color: #fff;
+  background-color: #F2F2F2;
 }
 
 
@@ -25,6 +25,9 @@
 
 .articles__item{
   width: 255px;
+  background-color: #fff;
+  border-radius: 5px;
+
 }
 .articles__img{
   width: 255px;
@@ -32,8 +35,8 @@
   border-radius: 5px 5px 0px 0px;
 }
 .articles__item-block{
-  margin-top: 25px;
-  padding: 0 24px;
+  // margin-top: 25px;
+  padding: 24px 24px;
 }
 
 
